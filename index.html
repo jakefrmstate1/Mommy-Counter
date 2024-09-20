@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rockstar's Mommy Jokes Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #1d1f21;
+      color: #ffffff;
+    }
+    #jokeCounter {
+      font-size: 48px;
+      margin: 20px;
+    }
+    .button {
+      background-color: #f39c12;
+      border: none;
+      padding: 15px 30px;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .button:hover {
+      background-color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rockstar's Mommy Jokes</h1>
+  <div id="jokeCounter">0</div>
+  <button class="button" onclick="incrementCounter()">Add Joke</button>
+
+  <script>
+    let jokeCount = 0;
+
+    function incrementCounter() {
+      jokeCount++;
+      document.getElementById("jokeCounter").innerText = jokeCount;
+    }
+  </script>
+</body>
+</html>
